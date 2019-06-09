@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src = "jquery.js"></script>
+<script>
+	$(document).ready(function(){
+	
+		$("#bt1").click(function(){		
+		$("p").toggle(1000);
+		});
+
+		$("p").click(function(){
+		$("*").hide();
+		});
+	});
+/head>
+<body>
+<p>This is First Paragraph</p>
+<p>This is Second Paragraph</p>
+<p>This is Third Pragraph</p>
+<button type = "button" id ="bt1" onclick="test()" >hide</button>
+<button type = "button" id = "bt2" onclick="test()">show</button> 
+</body>
+</html>

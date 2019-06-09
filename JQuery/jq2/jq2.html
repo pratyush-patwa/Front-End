@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src = "jquery.js"></script>
+<script>
+	$(document).ready(function(){
+	
+		$("form").submit(function(){		
+		$a=$("#email").val();
+		$b=$("pwd").val();
+		
+		if($a == null || $a ==""){
+		alert("Enter email");
+		}
+		
+		if($b == null || $b ==""){
+		alert("Enter password");
+		}
+		});
+	
+		$("#email").focus(function(){
+		alert("focus");
+		});
+
+		$("#email").blur(function(){
+		alert("blur");
+		});
+	
+		$("#lang").change(function(){
+		$c= $("#lang").val();
+
+		alert($c);
+		});
+	});
+</script>
+</head>
+<body>
+	<form action ="abc.html">
+	<table>
+		<tr>
+		<td>Email Id:</td>
+		<td><input type = "text" name="email" id ="email" ></td>
+		</tr>
+		<tr>
+		<td>Password:</td>
+		<td><input type = "password" name="pwd" id = "pwd"></td>
+		</tr>
+		
+		<tr>
+		<td>Languages:</td>
+		<td><select id="lang" id="lang">
+		<option value = "Java">Java</option>
+		<option value = "C++">C++</option>
+		<option value = "Python">Python</option>
+		<option value = "C">C</option>
+		</select></td>
+		</tr>
+
+		<tr>
+		<td><input type="submit" value= "Submit"></td>
+		</tr>
+
+	</table>
+	</form>
+</body>
+</html>
