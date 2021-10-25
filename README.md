@@ -1,4 +1,4 @@
-#Begginer Friendly FrontEnd
+# Begginer Friendly FrontEnd
 
 Welcome Begginers,
 Happy Hacking!!
